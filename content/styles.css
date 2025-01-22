@@ -1,0 +1,66 @@
+#gift{
+    position: absolute;
+    animation-name: gifted;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+#aa{
+    display: block;
+    margin: auto;
+    width: 50%;
+    font-family: 'Brush Script MT', cursive;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+#a{/*div img*/
+    display: flex;
+}
+#a1{/*italy flag img*/
+    width: 25%; 
+    margin: auto;
+}
+#a2{/*logo*/
+    width: 80%;
+}
+#a3{/*ph flag img*/
+    width: 25%; 
+    margin: auto;
+}
+@keyframes example {
+    0%   {color:red;}
+    25%  {color:yellow;}
+    50%  {color:blue;}
+    75%  {color:green;}
+    100% {color:red;}
+  }
+  @keyframes gifted {
+    0%   {font-size: 0px;}
+    25%  {font-size: 250px;}
+    50%  {font-size: 1000px;}
+    75%  {font-size: 10px;}
+    100% {font-size: 0px;}
+  }
+  @media only screen and (max-width: 768px) {
+    #aa{
+        font-size: 10px;
+        font-family: 'Brush Script MT', cursive;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    #gift{
+        position: absolute;
+        animation-name: gifted-mob;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes gifted-mob {
+        0%   {font-size: 0px;}
+        25%  {font-size: 50px;}
+        50%  {font-size: 240px;}
+        75%  {font-size: 100px;}
+        100% {font-size: 0px;}
+    }
+}
